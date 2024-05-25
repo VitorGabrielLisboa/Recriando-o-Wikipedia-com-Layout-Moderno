@@ -4,41 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <title>Stardew Valley - FanMade Wiki</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
-    <div>   
+    <header>   
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
+            <img src="assets/images/logo.png" width="50" style="padding: 10px 20px;" alt="logo">
         </div>
-    </div>
+        <div class="search">
+            <input type="text" id="buscar-input" required>
+            <label for="buscar-input">
+                <span>Procurar na página</span>
+                <ion-icon name="search-outline"></ion-icon>
+            </label>
+        </div>
+    </header>
 
     <div class="bar"></div>
 
     <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
+        <div class="wrap">
+            <aside class="sidebar">
+                <details>
+                    <summary><span>Stardew Valley</span></summary>         
+                <ul>
+                    <li><a href="index.html">Visão Geral e Jogabilidade</a></li>
+                    <li><a href="personagens.html">Personagens e História de Pelican Town</a></li>
+                    <li><a href="recursos.html"> Recursos e Atividades</a></li>
+                </ul>
+                </details>        
+            </aside>
+            <div class="bar"></div>
+            <nav class="anchors">
+                <details>
+                    <summary><span>Neste Artigo</span></summary>
+                    <ul>
+                        <li><a href="#visao geral e jogabilidade">Visão e Jogabilidade</a></li>
+                        <li><a href="#conceito central">Conceito Central</a></li>
+                        <li><a href="#historia">História</a></li>
+                        <li><a href="#jogabilidade">Jogabilidade</a></li>
+                        <li><a href="#desafios">Desafios e Conquistas</a></li>
+                        <li><a href="#recepção">Recepção do Público</a></li>
+                        <li><a href="#vendas">Vendas</a></li>
+                        <li><a href="#premiações">Premiações</a></li>
+                    </ul>
+                </details>
+            </nav>
         </div>
+        
 
-        <div class="main">
+        <main class="main">
+            <section id="visao geral e jogabilidade">
+            <h1>Visão Geral e Jogabilidade</h1>
+                <p>Stardew Valley é um jogo de simulação de fazenda desenvolvido por ConcernedApe (Eric Barone) e lançado em 2016. Desde então, tornou-se um fenômeno de culto, cativando jogadores com sua jogabilidade relaxante, charme nostálgico e rica variedade de atividades.</p>
+            </section>
+            <section id="conceito central">
+                <h2>Conceito Central</h2>
+                <p>O coração de Stardew Valley reside em sua simplicidade e profundidade. Os jogadores começam com uma fazenda dilapidada que herdaram de seu avô, e é sua responsabilidade transformá-la em uma próspera operação agrícola. No entanto, o jogo vai muito além de ser apenas um simulador de fazenda, oferecendo uma experiência de vida virtual rica e diversificada.</p>
+                <figure>
+                    <img src="assets/images/casaFazenda.png" alt="Imagem da Casa da Fazenda. A casa tem um estilo rústico, com paredes de madeira e um telhado inclinado coberto de telhas vermelhas" srcset="">
+                    <figcaption>Imagem da Casa da Fazenda</figcaption>
+                </figure>
+            </section>
+            <section id="historia">
+                <h2>História</h2>
+                <p>
+                    A história de Stardew Valley mergulha os jogadores em uma jornada emocional e gratificante de auto-descoberta e renovação. Ao herdar a fazenda de seu avô, o jogador é apresentado à pacata Pelican Town, um refúgio acolhedor de uma vida urbana agitada. Através do trabalho árduo na fazenda e da interação com os habitantes locais, o jogador começa a desvendar os segredos enterrados no passado da cidade e na própria família. A narrativa rica e envolvente de Stardew Valley é repleta de momentos de humor, drama e nostalgia, proporcionando uma experiência verdadeiramente imersiva.
+                </p>
+                <figure>
+                    <img src="assets/images/PelicanTown.png" alt="Mapa da Pelican Town" srcset="">
+                    <figcaption>Mapa da Pelican Town</figcaption>
+                </figure>
+            </section>
+            <section id="jogabilidade">
+                <h2>Jogabilidade</h2>
+                <p>
+                    Além das atividades básicas de fazenda, Stardew Valley oferece uma variedade de recursos e mecânicas de jogabilidade para manter os jogadores envolvidos. Aqui estão mais três aspectos essenciais da jogabilidade:
+                    <ol>
+                        <li><strong>Artesanato e Construção:</strong>
+                            Os jogadores podem utilizar os recursos coletados na fazenda e nas cavernas para criar uma variedade de itens úteis e decorativos. Desde móveis elegantes até máquinas avançadas de processamento de produtos agrícolas, as opções de artesanato são vastas e proporcionam aos jogadores uma maneira de personalizar e aprimorar sua fazenda.
+                        </li>
+                        <li><strong>Relacionamentos e Eventos Sociais:</strong>
+                            Uma das características mais cativantes de Stardew Valley é a capacidade dos jogadores de desenvolver relacionamentos significativos com os habitantes de Pelican Town. Ao conversar, presentear e completar missões para os moradores locais, os jogadores podem aumentar sua amizade e até mesmo encontrar o amor verdadeiro. Além disso, o jogo apresenta uma variedade de eventos sociais, como festivais sazonais e danças comunitárias, que oferecem oportunidades únicas de interação e diversão.
+                        </li>
+                        <li><strong>Exploração e Descoberta:</strong>
+                            O mundo de Stardew Valley é vasto e cheio de segredos esperando para serem descobertos. Além da fazenda e das cavernas, os jogadores podem explorar uma variedade de locais, incluindo florestas exuberantes, praias ensolaradas e áreas selvagens misteriosas. Cada local oferece uma variedade de recursos e oportunidades de exploração, incentivando os jogadores a sair da fazenda e descobrir o que o mundo tem a oferecer.
+                        </li>
+                    </ol>
+                </p>
+            </section>
+            <section id="desafios">
+                <h2>Desafios e Conquistas</h2>
+                <p>
+                    Além das atividades de fazenda e exploração, Stardew Valley apresenta uma série de desafios e conquistas para os jogadores enfrentarem. Desde completar as coleções do museu local até dominar todas as habilidades disponíveis no jogo, há sempre algo novo para os jogadores conquistarem e se esforçarem para alcançar. Esses desafios adicionam profundidade e longevidade à experiência de jogo, encorajando os jogadores a continuar explorando e expandindo seu mundo.
+                </p>
+            </section>
+            <section id="recepção">
+                <h2>Recepção do Público</h2>
+                <p>
+                    Desde o seu lançamento, Stardew Valley tem sido aclamado pela crítica e pelo público, recebendo elogios por sua jogabilidade viciante, narrativa envolvente e charme nostálgico. O jogo acumulou uma impressionante pontuação de crítica e uma base de fãs dedicada, que continua a crescer mesmo anos após o seu lançamento. Os jogadores elogiam a profunda sensação de realização ao transformar uma fazenda decadente em um paraíso rural próspero, bem como a variedade de atividades e personagens cativantes que o jogo oferece. Além disso, a comunidade de Stardew Valley é conhecida por sua natureza acolhedora e solidária, com jogadores compartilhando dicas, truques e histórias de sucesso em fóruns online e redes sociais.
+                </p>
+            </section>
+            <section id="vendas">
+                <h2>Vendas</h2>
+                <p>Stardew Valley tem sido um sucesso comercial fenomenal desde o seu lançamento, vendendo milhões de cópias em diversas plataformas. O jogo inicialmente foi lançado para Microsoft Windows em fevereiro de 2016, mas desde então foi portado para uma variedade de outras plataformas, incluindo macOS, Linux, PlayStation 4, Xbox One, Nintendo Switch e dispositivos móveis. A disponibilidade multiplataforma do jogo, juntamente com sua acessibilidade e apelo universal, contribuiu significativamente para suas impressionantes vendas. Além disso, o suporte contínuo do desenvolvedor Eric Barone, por meio de atualizações e conteúdo adicional gratuito, ajudou a manter o interesse e a demanda pelo jogo ao longo dos anos. Stardew Valley continua a ser uma presença dominante no cenário dos jogos independentes e um exemplo brilhante do poder da paixão e criatividade de um único desenvolvedor.
+                </p>
+            </section>
+            <section id="premiações">
+                <h2>Premiações</h2>
+                <p>
+                    Stardew Valley recebeu reconhecimento e prêmios de várias organizações da indústria de jogos e da comunidade de jogadores. Abaixo está uma tabela resumindo algumas das premiações mais significativas que o jogo recebeu:
+                </p>
+                <table>
+                    <thead>
+                        <th>Ano</th>
+                        <th>Premiação</th>
+                        <th>Categoria</th>
+                        <th>Resultado</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="8">2016</td>
+                            <td rowspan="3">Golden Joystic Awards</td>
+                            <td>Melhor Jogo Independente</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>Melhor Jogo para PC</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>Prêmio Revelação</td>
+                            <td id="venceu"><ion-icon name="checkmark-outline"></ion-icon> Venceu</td>
+                        </tr>
+                        <tr>
+                            <td>The Game Awards 2016</td>
+                            <td>Melhor Jogo Independente</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>Game Developers Choice Awards</td>
+                            <td>Melhor Estreia</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>Independent Games Festival</td>
+                            <td>Seumas McNally Grand Prize</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>SXSW Gaming Awards</td>
+                            <td>Nova Propriedade Intelectual Mais Promissora</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                        <tr>
+                            <td>13th British Academy Games Awards</td>
+                            <td>Melhor Jogo</td>
+                            <td id="nom"><ion-icon name="close-outline"></ion-icon> Nomeado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             
-        </div>
+        </main>
 
-        <div class="anchors">
-            <h2>Neste Artigo</h2>
-            <ul>
-                <li><a href="#">Âncoras</a></li>
-            </ul>
-        </div>
+        <section class="info">
+            <figure>
+                <figcaption>Stardew Valley</figcaption>
+                <img src="assets/images/StardewLogo.png" alt="Logo do Stardew Valley" srcset="">
+            </figure>
+            <div class="text">
+                <p>Desenvolvedora(s) <span>ConcernedApe</span></p>
+                <p>Publicadoras(s) <span>ConcernedApe</span></p>
+                <p>Projetista(s) <span>ConcernedApe</span></p>
+            </div>
+        </section>
     </div>
 
-    <div class="footer">
+    <footer class="footer">
+        <p>Este projeto tem uma abordagem educacional, desenvolvido com o propósito de aplicar e aprimorar habilidades técnicas em HTML e CSS</p>
+        <h3>Stardew Valley é um jogo desenvolvido por Eric Barone, conhecido como ConcernedApe. Todos os direitos autorais são de propriedade exclusiva de ConcernedApe</h3>
+    </footer>
 
-    </div>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

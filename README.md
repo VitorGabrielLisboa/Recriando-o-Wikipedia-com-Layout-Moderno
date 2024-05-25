@@ -1,19 +1,32 @@
-# Módulo 3 - Trilha HTML
+<div  align="center">
+<img  src="assets/images/wikipediaLogo.png"  alt="Banner"  title="Banner">
+</div>
 
-**Título:** Recriando Wikipedia, com um layout melhor :)
+<div  align="center">
 
-## Objetivo
-Este desafio consiste em treinar você com relação a estrutura do site, e também aplicar conhecimentos adiquiridos sobre semântica e acessibilidade.
+![Static Badge](https://img.shields.io/badge/HTML-_?style=flat&logo=html5&logoColor=%23ffffff&labelColor=%23222222&color=%23ffffff)
 
-## Desafio
-Neste repositório tem uma estrutura básica já pré-montada de um layout simples com um pouco de CSS aplicado. Apenas para deixar mais apresentável.
+![Static Badge](https://img.shields.io/badge/%20CSS%20-%20?logo=CSS3&labelColor=%231572b6&color=%23ffffff)
 
-Fiquem a vontade para criar da forma que desejarem, e sobre os temas que quiserem. O intuito aqui é divertir, e ao mesmo tempo aprender com o desafio.
+![Static Badge](https://img.shields.io/badge/javascript%20-%20A?logo=javascript&labelColor=%23444&color=%23f9f9f9)
 
-Sigam as intruções da chamada do vídeo. Acredito que por lá, ficará mais fácil de entenderem como proceder.
+![Static Badge](https://img.shields.io/badge/VSCode-red?style=flat&logo=visualstudiocode&logoColor=%23007ACC&labelColor=%23222222&color=%23555555)
 
-## Links úteis
-- [Download do NVDA](https://www.nvaccess.org/download/)
-- [Wikipedia](https://pt.wikipedia.org/)
+</div>
+
+  
+
+# Recriando o Wikipedia com Layout Moderno 💻
+
+> ⚠️ Esse Projeto foi feito para ser entregue na Formação - HTML Web Developer, na plataforma da [DIO](https://www.dio.me/)
+
+Projeto com o objetivo de recriar a Wikipedia com um layout mais moderno e acessibilidade básica. 
+
+## Tecnologias Utilizadas no Projeto ⚙️
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://devdocs.io/css/)
+- [JS](https://devdocs.io/javascript/)
+- [Visual Studio Code](https://code.visualstudio.com/docs)
 
 

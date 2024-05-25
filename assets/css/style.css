@@ -3,13 +3,81 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-ul { list-style: none; padding-left: 5px; }
+ul { list-style: none; padding-left: 15px; }
 a { color:blue; text-decoration: none;}
 .bar {
-    background-color: #f9f9fb;
-    padding:15px;
+    background-color: #cdcdcd;
+    padding: .7px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+header .search input{
+    width: 100%;
+    padding: 10px 50px 10px 10px; /* Ajuste de preenchimento */
+    font-size: 1.2em;
+    border: 2px solid #cdcdcd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+header .search label{
+    position: absolute;
+    right: 10px; /* Ajusta a posição do label/icon à direita do input */
+    display: flex;
+    justify-content: space-between; /* Espaço entre o texto e o ícone */
+    align-items: center;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+    width: calc(100% - 20px); /* Ajusta a largura do label */
+    padding: 0 10px;
+    transition: .3s ease all;
+}
+
+header .search span{
+    position: absolute;
+    left: 35px;
+    background: #fff;
+    transition: all 0.3s ease;
+
+}
+header .search ion-icon{
+    position: absolute;
+    right: 20px;
+    
+}
+.wrap .bar{
+    background-color: transparent;
+    padding: 0px;
+    border: solid .5px #cdcdcd ;
+    margin: 10px 0;
+}
+header .search input:hover,
+header .search input:valid,
+header .search input:focus{
+    border: solid 2px blue;
+}
+header .search input:focus + label span,
+header .search input:valid + label span{
+    transform: translate(-10px, -25px) scale(0.88);
+    color: blue;
+    font-size: 0.8em;
+    transition: .3s ease all;
 }
 .content {
     max-width: 1440px;
@@ -17,22 +85,128 @@ a { color:blue; text-decoration: none;}
     grid-gap: 3rem;
     display: grid;
     gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-areas: "wrap main info";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,.85fr);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.sidebar span,
+.anchors span{
+    padding-bottom: 10px ;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.main{
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.main h1,
+.main h2{
+    border-bottom: solid 1px #cdcdcd;
+    padding-bottom: 10px;
 }
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.anchors {
-    border-left: solid 1px #cdcdcd;
-    padding-left: 15px;
+.footer h3{
+    font-size: .8rem;
+    color: #cdcdcd;
+    font-weight: bold;
 }
-.sidebar {
+.wrap{
     border-right: solid 1px #cdcdcd;
 }
+.anchors {
+    padding-right: 15px;
+}
+.sidebar {
+    
+}
 figure {
+    background: #f7f7f7;
+    padding: 5px;
     text-align: center;
+}
+figure img{
+    margin: 10px;
+}
+ul li{
+    padding-bottom: 10px;
+}
+ol li{
+    padding-top: 10px;
+}
+.info{
+    border: solid 1px #eeeeee;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px; 
+    align-items: flex-start;
+    margin-top: 10px;
+    height: 300px;
+}
+.info .text{
+    font-size: .8rem;
+}
+.info figure {
+    top: 0;
+    padding: 0 0 0 0px;
+    margin: 0;
+
+}
+.info figure img{
+    width: auto;
+}
+.info figure figcaption{
+    background-color:#cdcdcd;
+    padding: 5px;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.info span{
+    margin: 0 0 0 5px;
+}
+.info .bar{
+    padding: 0px;
+}
+ion-icon{
+    vertical-align: middle;
+}
+#nom{
+    color: crimson;
+    font-weight: bold;
+}
+#venceu{
+    color: #32cd32;
+    font-weight: bold;
+}
+
+table{
+    width: 900px;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-collapse: collapse;
+}
+table td, th{
+    text-align: center;
+    margin: 5px;
+    border: solid 1px #cdcdcd;
+    padding: 10px;
+}
+thead th{
+    background: #cdcdcd;
+    font-weight: bold;
+}
+
+.destacado{
+    text-decoration: underline blue;
 }
